@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌈 可爱性格测试 🌈</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 背景装饰 -->
+    <div class="background-elements">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
+    <div class="container">
+        <!-- 开始页面 -->
+        <div id="start-page" class="page active">
+            <div class="welcome-card">
+                <h1 class="title">🌟 发现你的独特性格 🌟</h1>
+                <p class="subtitle">通过10个有趣的问题，探索你内心的秘密世界</p>
+                <div class="mascot">🦄</div>
+                <button id="start-btn" class="btn btn-primary pulse">
+                    <span>开始测试</span>
+                    <div class="btn-shine"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- 问题页面1 -->
+        <div id="questions-page-1" class="page">
+            <div class="quiz-card">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                    <span class="progress-text">第1页 / 共2页</span>
+                </div>
+                
+                <div class="questions-container">
+                    <!-- 问题1 -->
+                    <div class="question-item" data-question="1">
+                        <h3 class="question-title">🎉 在聚会上，你通常会...</h3>
+                        <div class="options">
+                            <button class="option-btn" data-value="E">主动和陌生人聊天</button>
+                            <button class="option-btn" data-value="I">找熟悉的朋友待在一起</button>
+                        </div>
+                    </div>
+
+                    <!-- 问题2 -->
+                    <div class="question-item" data-question="2">
+                        <h3 class="question-title">📚 学习新知识时，你更喜欢...</h3>
+                        <div class="options">
+                            <button class="option-btn" data-value="S">一步步按照指导来</button>
+                            <button class="option-btn" data-value="N">先理解整体概念</button>
+                        </div>
+                    </div>
+
+                    <!-- 问题3 -->
+                    <div class="question-item" data-question="3">
+                        <h3 class="question-title">🤔 做决定时，你更依赖...</h3>
+                        <div class="options">
+                            <button class="option-btn" data-value="T">逻辑分析</button>
+                            <button class="option-btn" data-value="F">内心感受</button>
+                        </div>
+                    </div>
+
+                    <!-- 问题4 -->
+                    <div class="question-item" data-question="4">
+                        <h3 class="question-title">⏰ 对于计划，你的态度是...</h3>
+                        <div class="options">
+                            <button class="option-btn" data-value="J">喜欢提前安排好</button>
+                            <button class="option-btn" data-value="P">保持灵活性</button>
+                        </div>
+                    </div>
+
+                    <!-- 问题5 -->
+                    <div class="question-item" data-question="5">
+                        <h3 class="question-title">🌙 理想的周末是...</h3>
+                        <div class="options">
+                            <button class="option-btn" data-value="E">和朋友们一起活动</button>
+                            <button class="option-btn" data-value="I">安静地享受独处时光</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="next-page-1" class="btn btn-secondary disabled">
+                    <span>下一页</span>
+                    <div class="btn-shine"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- 问题页面2 -->
+        <div id="questions-page-2" class="page">
+            <div class="quiz-card">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%"></div>
+                    <span class="progress-text">第2页 / 共2页</span>
+                </div>
+                
+                <div class="questions-container">
+                    <!-- 问题6 -->
+                    <div class="question-item" data-question="6">
+                        <h3 class="question-title">🎨 你更欣赏...</h3>
+                        <div class="options">
+                            <button class="option-btn" data-value="S">具体的艺术作品</button>
+                            <button class="option-btn" data-value="N">抽象的创意表达</button>
+                        </div>
+                    </div>
+
+                    <!-- 问题7 -->
+                    <div class="question-item" data-question="7">
+                        <h3 class="question-title">💭 处理冲突时，你会...</h3>
+                        <div class="options">
+                            <button class="option-btn" data-value="T">分析问题的根源</button>
+                            <button class="option-btn" data-value="F">考虑每个人的感受</button>
+                        </div>
+                    </div>
+
+                    <!-- 问题8 -->
+                    <div class="question-item" data-question="8">
+                        <h3 class="question-title">📝 工作方式上，你偏向...</h3>
+                        <div class="options">
+                            <button class="option-btn" data-value="J">按计划有序进行</button>
+                            <button class="option-btn" data-value="P">根据情况调整</button>
+                        </div>
+                    </div>
+
+                    <!-- 问题9 -->
+                    <div class="question-item" data-question="9">
+                        <h3 class="question-title">🗣️ 表达想法时，你更喜欢...</h3>
+                        <div class="options">
+                            <button class="option-btn" data-value="E">说出来讨论</button>
+                            <button class="option-btn" data-value="I">先在心里整理好</button>
+                        </div>
+                    </div>
+
+                    <!-- 问题10 -->
+                    <div class="question-item" data-question="10">
+                        <h3 class="question-title">🌟 你认为成功更需要...</h3>
+                        <div class="options">
+                            <button class="option-btn" data-value="S">扎实的基础和经验</button>
+                            <button class="option-btn" data-value="N">创新的想法和直觉</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="get-result" class="btn btn-primary disabled">
+                    <span>查看结果</span>
+                    <div class="btn-shine"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- 结果页面 -->
+        <div id="result-page" class="page">
+            <div class="result-card">
+                <div class="result-header">
+                    <h2>🎊 你的性格类型是 🎊</h2>
+                    <div class="personality-type" id="personality-type">ENFP</div>
+                    <div class="personality-name" id="personality-name">热情的鼓励者</div>
+                </div>
+                
+                <div class="result-content">
+                    <div class="personality-emoji" id="personality-emoji">🌈</div>
+                    <div class="personality-description" id="personality-description">
+                        你是一个充满活力和创造力的人！
+                    </div>
+                    
+                    <div class="personality-traits" id="personality-traits">
+                        <h4>你的特质：</h4>
+                        <ul>
+                            <li>热情开朗，善于激励他人</li>
+                            <li>富有创造力和想象力</li>
+                            <li>善于发现新的可能性</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="result-actions">
+                    <button id="restart-btn" class="btn btn-secondary">
+                        <span>重新测试</span>
+                        <div class="btn-shine"></div>
+                    </button>
+                    <button id="share-btn" class="btn btn-primary">
+                        <span>分享结果</span>
+                        <div class="btn-shine"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

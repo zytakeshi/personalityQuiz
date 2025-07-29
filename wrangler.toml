@@ -1,0 +1,11 @@
+name = "personality-quiz"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[env.production]
+name = "personality-quiz"
+
+# 可选：自定义域名配置
+# routes = [
+#   { pattern = "your-domain.com/*", zone_name = "your-domain.com" }
+# ] 
