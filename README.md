@@ -26,6 +26,11 @@ personalityQuiz/
 ├── index.html      # 主页面文件
 ├── styles.css      # 样式和动画
 ├── script.js       # 测试逻辑和交互
+├── public/         # Cloudflare Worker 之外的静态资源副本
+├── worker.js       # Cloudflare Worker 部署入口
+├── wrangler.toml   # Cloudflare Worker 配置
+├── deploy.md       # 部署说明
+├── package-lock.json
 └── README.md       # 说明文档
 ```
 
@@ -40,10 +45,10 @@ personalityQuiz/
 
 ## 🛠 技术特点
 
-- 纯前端实现，无需服务器
+- 纯前端页面可直接在浏览器打开；线上部署版通过 `worker.js` 托管在 Cloudflare Workers
 - 使用现代CSS3动画和渐变
 - 响应式设计，移动设备友好
-- 无第三方依赖，加载速度快
+- 应用运行时无第三方依赖；部署工具使用 Wrangler（见 `deploy.md`）
 - 支持键盘导航和无障碍访问
 
 ## 🎨 设计亮点
@@ -54,4 +59,4 @@ personalityQuiz/
 - 互动性强的按钮效果
 - 温馨的卡片式布局
 
-享受你的性格探索之旅！🌟 
+享受你的性格探索之旅！🌟
