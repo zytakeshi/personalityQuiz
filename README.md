@@ -13,11 +13,23 @@
 
 ## 🚀 如何使用
 
+### 静态预览
+
 1. 直接在浏览器中打开 `index.html` 文件
 2. 点击"开始测试"按钮
 3. 回答10个问题（分两页，每页5个问题）
 4. 查看你的性格类型结果
 5. 可以分享结果或重新测试
+
+### Cloudflare Worker 部署
+
+生产环境由 `worker.js` 作为 Cloudflare Worker 入口提供。安装 Wrangler 后运行：
+
+```bash
+npx wrangler deploy
+```
+
+静态 `index.html` 仅用于本地预览；Worker 部署使用 `worker.js` 中嵌入的应用内容。
 
 ## 📁 文件结构
 
